@@ -6,5 +6,7 @@
     <li>Is this a new session? <%=session.isNew() %></li>
     <li>The output object is an instance of the <%=out.getClass() %></li>
     <li>The buffer size of the output is: <%=out.getBufferSize() %></li></ul>
+    
+    }
   </body>
   <html>
