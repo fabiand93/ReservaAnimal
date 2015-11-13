@@ -4,8 +4,8 @@ public class Cliente extends Persona{
 	private int edad;
 
 	public Cliente(String nombre, String apellido, String identificacion,
-			String usuario, String contraseña,int edad) {
-		super(nombre, apellido, identificacion, usuario, contraseña);
+			String usuario, String contrasena,int edad) {
+		super(nombre, apellido, identificacion, usuario, contrasena);
 		// TODO Auto-generated constructor stub
 	this.edad=edad;	
 	}
