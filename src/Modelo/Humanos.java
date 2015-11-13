@@ -12,18 +12,18 @@ public class Humanos {
 	}
 
 	public Cliente crearCliente(String nombre, String apellido,
-			String identificacion, String usuario, String contraseña, int edad) {
+			String identificacion, String usuario, String contrasena, int edad) {
 
 		return new Cliente(nombre, apellido, identificacion, usuario,
-				contraseña, edad);
+				contrasena, edad);
 	}
 
 	public Empleado crearEmpleado(String nombre, String apellido,
-			String identificacion, String usuario, String contraseña,
+			String identificacion, String usuario, String contrasena,
 			Boolean tipo, String cargo) {
 
 		return new Empleado(nombre, apellido, identificacion, usuario,
-				contraseña, tipo, cargo);
+				contrasena, tipo, cargo);
 	}
 
 	public void agregarCliente(Cliente c) {
@@ -56,27 +56,27 @@ public class Humanos {
 		return e;
 	}
 
-	public void modificarCliente(String id ,String usuario, String contraseña){
+	public void modificarCliente(String id ,String usuario, String contrasena){
 	
 
 		Cliente c =this.ConsultarCliente(id);
 	if ( c != null){
 	     clientes.remove(this.ConsultarCliente(id));
 	     c.setUsuario(usuario);
-	     c.setContraseña(contraseña);
+	     c.setContrasena(contrasena);
 		clientes.add(c);
 		
 	}
 	}
 
 	public boolean modificarEmpleado(String identificacion, String usuario,
-			String contraseña, Boolean tipo, String cargo) {
+			String contrasena, Boolean tipo, String cargo) {
             boolean response = false;
 		Empleado e = this.ConsultarEmpleado(identificacion);
 		if (e != null) {
 			empleados.remove(this.ConsultarEmpleado(identificacion));
 			e.setUsuario(usuario);
-			e.setContraseña(contraseña);
+			e.setContrasena(contrasena);
 			e.setCargo(cargo);
 
 			empleados.add(e);

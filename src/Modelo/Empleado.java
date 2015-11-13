@@ -4,8 +4,8 @@ public class Empleado  extends Persona{
 	private  Boolean tipo;
 	private String cargo;
 	public Empleado(String nombre, String apellido, String identificacion,
-			String usuario, String contraseña,Boolean tipo,String cargo) {
-		super(nombre, apellido, identificacion, usuario, contraseña);
+			String usuario, String contrasena,Boolean tipo,String cargo) {
+		super(nombre, apellido, identificacion, usuario, contrasena);
 		// TODO Auto-generated constructor stub
 	this.tipo=tipo;
 	this.cargo=cargo;

@@ -5,14 +5,14 @@ public class Persona {
 	private String apellido;
 	private String identificacion;
 	private String usuario;
-	private String contraseña;
+	private String contrasena;
 	
-	public Persona(String nombre , String apellido,String identificacion,String usuario,String contraseña){
+	public Persona(String nombre , String apellido,String identificacion,String usuario,String contrasena){
 		this.nombre=nombre;
 		this.apellido=apellido;
 		this.identificacion=identificacion;
 		this.usuario=usuario;
-		this.contraseña=contraseña;
+		this.contrasena=contrasena;
 	}
 
 	public String getNombre() {
@@ -47,12 +47,12 @@ public class Persona {
 		this.usuario = usuario;
 	}
 
-	public String getContraseña() {
-		return contraseña;
+	public String getContrasena() {
+		return contrasena;
 	}
 
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
+	public void setContrasena(String contrasena) {
+		this.contrasena = contrasena;
 	}
 	
 
