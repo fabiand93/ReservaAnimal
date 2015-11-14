@@ -1,4 +1,4 @@
-package ProyectoFinal;
+package Modelo;
 
 public class Animal {
 
