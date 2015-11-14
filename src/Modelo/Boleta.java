@@ -3,11 +3,11 @@ package Modelo;
 public class Boleta {
 	private int numero;
 	private int precioAdulto;
-	private int precioNiño;
+	private int precioNino;
     public Boleta(int numero ,int precio){
     	this.numero=numero;
     	this.precioAdulto=precioAdulto;
-    	this.precioNiño=precioNiño;
+    	this.precioNino=precioNino;
     	
     }
 	public int getNumero() {
@@ -22,11 +22,11 @@ public class Boleta {
 	public void setPrecioAdulto(int precioAdulto) {
 		this.precioAdulto = precioAdulto;
 	}
-	public int getPrecioNiño() {
-		return precioNiño;
+	public int getPrecioNino() {
+		return precioNino;
 	}
 	public void setPrecioNiño(int precioNiño) {
-		this.precioNiño = precioNiño;
+		this.precioNino = precioNiño;
 	}
 
 }
