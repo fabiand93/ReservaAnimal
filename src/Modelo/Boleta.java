@@ -25,8 +25,8 @@ public class Boleta {
 	public int getPrecioNino() {
 		return precioNino;
 	}
-	public void setPrecioNiño(int precioNiño) {
-		this.precioNino = precioNiño;
+	public void setPrecioNino(int precioNino) {
+		this.precioNino = precioNino;
 	}
 
 }
