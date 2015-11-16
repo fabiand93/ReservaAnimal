@@ -3,13 +3,17 @@ package Modelo;
 public class Animal {
 
 	private String nombre;
-	private int id;
+	private String id;
 	private String tipoDeAlimento;
 	private String descripcion;
-	private int edad;
+	private String edad;
 	
-	public Animal(String nombre, String id, String tipoDeAlimento, String descripcion, int edad){
-		
+	public Animal(String nombre, String id, String tipoDeAlimento, String descripcion, String edad){
+		this.nombre=nombre;
+		this.id=id;
+		this.tipoDeAlimento=tipoDeAlimento;
+		this.descripcion=descripcion;
+		this.edad=edad;
 	}
 
 	public String getNombre() {
@@ -20,11 +24,11 @@ public class Animal {
 		this.nombre = nombre;
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -44,11 +48,11 @@ public class Animal {
 		this.descripcion = descripcion;
 	}
 
-	public int getEdad() {
+	public String getEdad() {
 		return edad;
 	}
 
-	public void setEdad(int edad) {
+	public void setEdad(String edad) {
 		this.edad = edad;
 	}
 	
