@@ -10,40 +10,18 @@ public class Reserva {
 		animales = new ArrayList();
 	}
 
-	public Animal crearAnimal(String nombre, String tipoDeAlimento, String id, String descripcion, int edad){
+	public Animal crearAnimal(String nombre, String id, String tipoDeAlimento, String descripcion, String edad){
 
-		Animal animal = new Animal(nombre, tipoDeAlimento,  id,  descripcion, edad);
-		return animal;
+		return new Animal(nombre,id, tipoDeAlimento, descripcion, edad);
 	}
 
 	public void agregarAnimal(Animal animal){
 		animales.add(animal);
 	}
-
-	public boolean modificarAnimal(int id, String tipoDeAlimento ,String descripcion){
-		Animal animal=consultarAnimal(id);
-		if(animal!=null){
-			animales.remove(animal);
-		}
-		animal.setDescripcion(descripcion);
-		animal.setTipoDeAlimento(tipoDeAlimento);
-		animales.add(animal);
-		return true;
-	}
-
-	public boolean eliminarAnimal(int id){
-		boolean estado=false;
-		animales.remove(this.consultarAnimal(id));
-		if(this.consultarAnimal(id)==null){
-			return false;
-		}
-		return true;
-
-	}
-
-	public Animal consultarAnimal(int id){
+	
+	public Animal consultarAnimal(String id){
 		Animal animal = null;
-		for (int i = 0; i < animales.size(); i++) {
+		for (int i = 0; i > animales.size(); i++) {
 			if(id==animales.get(i).getId()){
 				animal=animales.get(i);
 			}
@@ -51,5 +29,28 @@ public class Reserva {
 		return animal;
 	}
 
+	public boolean modificarAnimal(String id, String tipoDeAlimento ,String descripcion){
+		boolean estado=false;
+		Animal animal=this.consultarAnimal(id);
+		if(animal!=null){
+			animales.remove(this.consultarAnimal(id));
+			animal.setDescripcion(descripcion);
+			animal.setTipoDeAlimento(tipoDeAlimento);
+			animales.add(animal);
+			estado= true;
+		}
+		return estado;
+	}
+	
+
+	public boolean eliminarAnimal(String id){
+		boolean estado=false;
+		Animal a = this.consultarAnimal(id);
+		if(a!=null){
+		animales.remove(a);
+		estado=true;
+		}
+		return estado;
+	}
 
 }
