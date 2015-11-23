@@ -45,18 +45,13 @@ public class ServletCrearAnimal extends HttpServlet {
 		        
 				response.setContentType("text/html");
 				PrintWriter pw = response.getWriter();
-				pw.println(response+"<HTML><HEAD><TITLE>Creacion de animales</TITLE></HEAD>");
-				pw.println("<BODY BGCOLOR=\"#CCBBAA\">");
-				pw.println("<H2>Leyendo par�metros desde un formulario html</H2><P>");
-				pw.println("<UL>\n");
-				pw.println("Verificacion de datos:");
-				pw.println("El nombre del animal es: " +nombre  + "<BR>");
-				pw.println("La edad es: " + edad + "<BR>");
-				pw.println("Identificacion: " + identificacion + "<BR>");
-				pw.println("El tipo de alimento que consume es: " +descripcion  + "<BR>");
-				pw.println("Descripcion del animal: " +alimento  + "<BR>");
-				pw.println("</BODY></HTML>");
-				pw.close();
+				pw.println(response+"<HTML><HEAD><TITLE>Creacion de animales</TITLE></HEAD>"+"<BODY BGCOLOR=\"#CCBBAA\">"
+				+"<H2>Leyendo parametros desde un formulario html</H2><P>"+"<UL>\n"+"Verificacion de datos:"+
+				"El nombre del animal es: " +nombre  + "<BR>"+"La edad es: " + edad + "<BR>"+"Identificacion: " + identificacion + "<BR>"
+				+"El tipo de alimento que consume es: " +descripcion  + "<BR>"+"Descripcion del animal: " +alimento  + "<BR>"+"</BODY></HTML>");
+				
+				
+			
 	}
 
 }
