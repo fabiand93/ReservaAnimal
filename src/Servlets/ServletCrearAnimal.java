@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class CrearAnimal
  */
-@WebServlet("/CrearAnimal")
+@WebServlet("CrearAnimal")
 public class ServletCrearAnimal extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -36,18 +36,25 @@ public class ServletCrearAnimal extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// Obtenemos un objeto Print Writer para enviar respuesta
+		        String nombre = request.getParameter("nombre");
+		        String edad = request.getParameter("edad");
+		        String identificacion = request.getParameter("id");
+		        String descripcion = request.getParameter("des");
+		        String alimento = request.getParameter("alimento");
+		        Animal a = new Animal(nombre,identificacion,alimento,descripcion,edad);
+		        
 				response.setContentType("text/html");
 				PrintWriter pw = response.getWriter();
-				pw.println("<HTML><HEAD><TITLE>Creacion de animales</TITLE></HEAD>");
+				pw.println(response+"<HTML><HEAD><TITLE>Creacion de animales</TITLE></HEAD>");
 				pw.println("<BODY BGCOLOR=\"#CCBBAA\">");
-				pw.println("<H2>Leyendo parámetros desde un formulario html</H2><P>");
+				pw.println("<H2>Leyendo parï¿½metros desde un formulario html</H2><P>");
 				pw.println("<UL>\n");
 				pw.println("Verificacion de datos:");
-				pw.println("El nombre del animal es: " + request.getParameter("nombre") + "<BR>");
-				pw.println("La edad es: " + request.getParameter("edad") + "<BR>");
-				pw.println("Identificacion: " + request.getParameter("id") + "<BR>");
-				pw.println("El tipo de alimento que consume es: " + request.getParameter("alimento") + "<BR>");
-				pw.println("Descripcion del animal: " + request.getParameter("des") + "<BR>");
+				pw.println("El nombre del animal es: " +nombre  + "<BR>");
+				pw.println("La edad es: " + edad + "<BR>");
+				pw.println("Identificacion: " + identificacion + "<BR>");
+				pw.println("El tipo de alimento que consume es: " +descripcion  + "<BR>");
+				pw.println("Descripcion del animal: " +alimento  + "<BR>");
 				pw.println("</BODY></HTML>");
 				pw.close();
 	}
