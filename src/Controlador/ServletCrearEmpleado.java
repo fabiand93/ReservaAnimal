@@ -40,13 +40,14 @@ public class ServletCrearEmpleado extends HttpServlet {
         String contrasena = request.getParameter("contrasena");
         String cargo = request.getParameter("cargo");
         
+        Empleado nuevoEmpleado = new Empleado(nombre,apellido,identificacion,usuario,contrasena,cargo);
+        
+        Registros.crearEmpleado(nombre, apellido, identificacion, usuario, contrasena, cargo);
+        
         System.out.println(nombre+" "+apellido+" "+identificacion+" "+usuario+" "+contrasena+" "+cargo);
         
         HttpSession sesion = request.getSession();
         
-        Empleado nuevoEmpleado = new Empleado(nombre,apellido,identificacion,usuario,contrasena,cargo);
-        
-        Registros.crearEmpleado(nombre, apellido, identificacion, usuario, contrasena, cargo);
         
         sesion.setAttribute(usuario, nuevoEmpleado);
         
