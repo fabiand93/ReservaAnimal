@@ -1,4 +1,4 @@
-package controlador;
+package Controlador;
 
 import java.io.IOException;
 
@@ -26,7 +26,6 @@ public class Logincontroller extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		RequestDispatcher rd = null;
-
 		Authenticator authenticator = new Authenticator();
 		String result = authenticator.authenticate(username, password);
 		if (result.equals("success")) {
