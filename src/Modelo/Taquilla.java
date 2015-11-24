@@ -11,7 +11,7 @@ public class Taquilla {
    public Taquilla(Empleado encargado){
 	   this.encargado=encargado;
    }
-   public void venderTiquete(Cliente c){
+   public Boleta venderTiquete(Cliente c){
 	   int p =0,n=0;
 	   if (c.getEdad()<18){
 		   p=this.precioNino;
@@ -28,6 +28,7 @@ public class Taquilla {
 		
 	}
 	boleteria.add(new Boleta(n,p));
+	return new Boleta(n,p);
    }
    public void recibirDonacion(Cliente c ,int m ){
 	   donaciones.add(new Donacion(m,c));

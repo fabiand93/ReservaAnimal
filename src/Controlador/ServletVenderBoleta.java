@@ -54,6 +54,7 @@ public class ServletVenderBoleta extends HttpServlet {
 			;
 			Taquilla taq = new Taquilla((Empleado) sesion.getAttribute("empleado"));
 			//cargar Datos
+			
 			Boleta  b = taq.venderTiquete(cliente); //que hace?
 			response.setContentType("text/html");
 			PrintWriter pw = response.getWriter();

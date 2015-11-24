@@ -24,7 +24,7 @@
 				</header>
 			</div>
 
-								<!-- Nav -->
+			<!-- Nav -->
 			<nav id="nav">
 				<ul>
 					<li><a href="index.html">Inicio</a></li>
@@ -46,7 +46,7 @@
 							 -->
 						</ul>
 					</li>
-					<li><a href="comprar-entradas.html">Comprar Entradas</a></li>
+					<li><a href="ComprarEntradas.jsp">Comprar Entradas</a></li>
 					<li><a href="donaciones.html">Donaciones</a></li>
 					<li><a href="login.jsp">Login</a>
 				</ul>

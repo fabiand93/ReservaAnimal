@@ -24,7 +24,7 @@
 				</header>
 			</div>
 
-								<!-- Nav -->
+							<!-- Nav -->
 			<nav id="nav">
 				<ul>
 					<li><a href="index.html">Inicio</a></li>
