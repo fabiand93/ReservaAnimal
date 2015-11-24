@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import Modelo.Boleta;
 import Modelo.Cliente;
 import Modelo.Empleado;
 import Modelo.Registros;
@@ -53,7 +54,14 @@ public class ServletVenderBoleta extends HttpServlet {
 			;
 			Taquilla taq = new Taquilla((Empleado) sesion.getAttribute("empleado"));
 			//cargar Datos
-			taq.venderTiquete(cliente);
+			Boleta  b = taq.venderTiquete(cliente);
+			response.setContentType("text/html");
+			PrintWriter pw = response.getWriter();
+			String docType =
+					"<!DOCTYPE html>\n";
+			pw.println(docType+"<HTML><HEAD><TITLE>Boleta vendida </TITLE></HEAD>"+"<BODY BGCOLOR=\"#CCBBAA\">"
+					+"<H2>Leyendo parametros desde un formulario html</H2><P>"+"<UL>\n"+"Verificacion de datos:  "+"<br>"+"su boleta es la numero :"+b.getNumero()  + "</P><BR>"+"</BODY></HTML>");
+			
 			
 		}
 	}
