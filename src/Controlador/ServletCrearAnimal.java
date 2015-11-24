@@ -58,7 +58,7 @@ public class ServletCrearAnimal extends HttpServlet {
 			+"<p>&nbsp &nbsp</p><label>Nombre del animal:"+ nombre+" </label><br><label>Identificacion:"+identificacion+"</label>"
 			+"<br><label>Alimento al que esta acostumbrado: "+alimento+"</label> <br><label>Descripcion del animal:"+descripcion+"</label>"
 			+"<br><label>Edad del animal:"+ edad +" </label><br><br/>"
-			+"<a href=\"CrearAnimal.html\" target=\"_self\"> <input type=\"button\" name=\"boton\" value=\"Volver uno\" /> </a>"
+			+"<a href=\"CrearAnimal.html\" target=\"_self\"> <input type=\"button\" name=\"boton\" value=\"Volver\" /> </a>"
 			+"</div></div></div></div></section></article><div class=\"row\"></div></div></div><div id=\"footer\"><div class=\"container\">"
 			+"<div class=\"row\"></div><hr /><div class=\"row\"><div class=\"12u\"><section class=\"contact\">"
 			+"<header><h3>Ponte en contacto con nosotros</h3></header><p>Siguenos en nuestras redes sociales para que siempre estes al dia de nuestras acciones.</p>"
