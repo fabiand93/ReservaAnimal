@@ -20,10 +20,10 @@ public class Registros {
 
 	public Empleado crearEmpleado(String nombre, String apellido,
 			String identificacion, String usuario, String contrasena,
-			Boolean tipo, String cargo) {
+			 String cargo) {
 
 		return new Empleado(nombre, apellido, identificacion, usuario,
-				contrasena, tipo, cargo);
+				contrasena,  cargo);
 	}
 
 	public void agregarCliente(Cliente c) {
