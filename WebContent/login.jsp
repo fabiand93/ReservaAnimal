@@ -24,17 +24,17 @@
 				</header>
 			</div>
 
-			<!-- Nav -->
+								<!-- Nav -->
 			<nav id="nav">
 				<ul>
 					<li><a href="index.html">Inicio</a></li>
 					<li>
 						<a href="#">Sobre Nosotros</a>
 						<ul>
-							<li><a href="mision.html">MisiÃ³n</a></li>
-							<li><a href="vision.html">VisiÃ³n</a></li>
+							<li><a href="mision.html">Misión</a></li>
+							<li><a href="vision.html">Visión</a></li>
 							<!--
-							SubmenÃº <li>
+							Submenú <li>
 								<a href="#">And a submenu &hellip;</a>
 								<ul>
 									<li><a href="#">Lorem ipsum dolor</a></li>
@@ -48,12 +48,11 @@
 					</li>
 					<li><a href="comprar-entradas.html">Comprar Entradas</a></li>
 					<li><a href="donaciones.html">Donaciones</a></li>
-					<li><a href="login.html">Login</a>
+					<li><a href="login.jsp">Login</a>
 				</ul>
 			</nav>
 
 		</div>
-
 		<!-- Main -->
 		<div class="wrapper style1">
 
