@@ -57,6 +57,8 @@ public class Animal {
 	}
 	
 	public String toString(){
-		return this.getNombre()+","+this.getId()+","+this.getTipoDeAlimento()+","+this.getDescripcion()+","+this.getEdad();
+		return "Nombre: "+this.getNombre()+","+"Identificacion: "+this.getId()+","
+	+"Tipo de alimento: "+this.getTipoDeAlimento()+","+"Descripcion: "+this.getDescripcion()+","+
+				"Edad: "+this.getEdad();
 	}
 }

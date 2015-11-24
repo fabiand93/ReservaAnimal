@@ -33,18 +33,22 @@ public class ServletCrearCliente extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		HttpSession sesion = request.getSession();
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		
 		String nombre = request.getParameter("nombre");
         String apellido = request.getParameter("apellido");
         String identificacion = request.getParameter("id");
         String usuario = request.getParameter("usuario");
         String contrasena = request.getParameter("contrasena");
         int edad = new Integer(request.getParameter("edad")).intValue();
-        Cliente nuevoCLiente = new Cliente(nombre,apellido,identificacion,usuario,contrasena,edad);
-       
+        HttpSession sesion = request.getSession();
+        Cliente nuevoCliente = new Cliente(nombre,apellido,identificacion,usuario,contrasena,edad);
+        sesion.setAttribute(usuario, nuevoCliente);
 		response.setContentType("text/html");
 		PrintWriter pw = response.getWriter();
+		String docType =
+				"<!DOCTYPE html>\n";
+		pw.println(docType+"<HTML><HEAD><TITLE>Creacion de Clientes</TITLE></HEAD>"+"<Body>"+"</P><BR>"+"</BODY></HTML>");
 	}
 
 	/**
