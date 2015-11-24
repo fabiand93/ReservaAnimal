@@ -56,6 +56,7 @@ public class Animal {
 		this.edad = edad;
 	}
 	
+	@Override
 	public String toString(){
 		return "Nombre: "+this.getNombre()+","+"Identificacion: "+this.getId()+","
 	+"Tipo de alimento: "+this.getTipoDeAlimento()+","+"Descripcion: "+this.getDescripcion()+","+

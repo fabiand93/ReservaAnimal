@@ -14,6 +14,15 @@ public class Boleta {
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
-
-
+	
+	public int getPrecio() {
+		return precio;
+	}
+	public void setPrecio(int precio) {
+		this.precio = precio;
+	}
+	@Override
+	public String toString(){
+		return this.getNumero()+","+this.getPrecio();
+	}
 }

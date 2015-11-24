@@ -20,6 +20,7 @@ public class Donacion {
 		this.donador = donador;
 	}
 	
+	@Override
 	public String toString(){
 		return this.getMonto()+","+this.getDonador();
 	}

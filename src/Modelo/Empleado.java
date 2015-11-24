@@ -23,5 +23,10 @@ public class Empleado  extends Persona{
 		this.cargo = cargo;
 	}
 	
+	@Override
+	public String toString(){
+		return this.getNombre()+","+this.getApellido()+","+this.getIdentificacion()+","+this.getUsuario()
+		+","+this.getContrasena()+","+this.getTipo()+","+this.getCargo();
+	}
 
 }
