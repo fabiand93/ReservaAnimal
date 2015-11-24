@@ -33,14 +33,30 @@
 			</nav>
 	</div>
 	<!-- Inicia formulario para crear animal -->
-<h1>
-<b>Ingresa aqui los datos del animal a crear</b>
-</h1>
+  <!-- Para mejorar aspecto -->
+  	<div class="wrapper style1">
 
-<hr>
-    <form name="CrearAnimal" method="get" action="ServletCrearAnimal"> 
+			<div class="container">
+				<article id="main" class="special">
+					<header>
+						<h2><a href="#">Crear Animal</a></h2>
+					</header>
+
+					<!-- login form -->
+					<section>
+						<div class="Login">
+							<div id="check-accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+								<div class="clearfix ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active" id="ui-accordion-check-accordion-panel-0" aria-labelledby="ui-accordion-check-accordion-header-0" role="tabpanel" aria-expanded="true"
+								aria-hidden="false" style="display: block; height: 905px;">
+									<div class="span6 cheakout clearfix register">
+										<h6>
+											<p>Ingresa aqui los datos del animal a crear</p> &nbsp
+											<span>Por favor completa el siguiente formulario:</span> 
+										</h6>
+										<form name="CrearAnimal" method="get" action="ServletCrearAnimal"> 
     
-      <label  for="nombre">Ingresa el nombre porfavor:
+      <p>&nbsp &nbsp</p>
+      <label>Ingresa el nombre porfavor:
       <input  id="nombre" name="nombre" placeholder="Escribe aqui su nombre" type="text"> </label>
       <br>
       <label  for="id">Ingresa su identificacion porfavor:
@@ -59,6 +75,17 @@
       <input type="submit" value="Crear">    
   
     </form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</article>
+				<div class="row">
+				</div>
+			</div>
+
+		</div>
     <!-- cierra formulario crear animal -->
 			<!-- Footer -->
 				<div id="footer">
