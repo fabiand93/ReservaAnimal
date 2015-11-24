@@ -39,9 +39,9 @@ public class ServletCrearCliente extends HttpServlet {
         String apellido = request.getParameter("apellido");
         String identificacion = request.getParameter("id");
         String usuario = request.getParameter("usuario");
-        String contraseña = request.getParameter("contraseña");
+        String contrasena = request.getParameter("contrasena");
         int edad = new Integer(request.getParameter("edad")).intValue();
-        Cliente nuevoCLiente = new Cliente(nombre,apellido,identificacion,usuario,contraseña,edad);
+        Cliente nuevoCLiente = new Cliente(nombre,apellido,identificacion,usuario,contrasena,edad);
        
 		response.setContentType("text/html");
 		PrintWriter pw = response.getWriter();
