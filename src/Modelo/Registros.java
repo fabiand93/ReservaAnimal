@@ -2,11 +2,11 @@ package Modelo;
 
 import java.util.ArrayList;
 
-public class Humanos {
+public class Registros {
 	private ArrayList<Cliente> clientes;
 	private ArrayList<Empleado> empleados;
 
-	public Humanos() {
+	public Registros() {
 		clientes = new ArrayList();
 		empleados = new ArrayList();
 	}
