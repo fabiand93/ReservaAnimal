@@ -1,5 +1,8 @@
 package Modelo;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.util.ArrayList;
 
 public class Registros {
@@ -103,4 +106,51 @@ public class Registros {
 	    }
 		return response;
 	}
+	
+	public void cargarDatosCliente() throws Exception{
+		String ruta = "Files/archivoC.txt";
+        File archivoC = new File(ruta);
+        BufferedWriter bw;
+        if(archivoC.exists()) {
+            bw = new BufferedWriter(new FileWriter(archivoC));
+            bw.write("El archivo ya habia sido creado.");
+        } else {
+            bw = new BufferedWriter(new FileWriter(archivoC));
+            bw.write("Se creo el archivo exitosamente.");
+        }
+        bw.close();
+        
+        Lector l = new Lector(archivoC);
+        l.leerLinea();
+       
+        String linea;
+
+		while((linea=l.leerLinea())!=null){
+			linea.split(",");
+		}
+	}
+	
+	public void cargarDatosEmpleado() throws Exception{
+		String ruta = "Files/archivoE.txt";
+        File archivoE = new File(ruta);
+        BufferedWriter bw;
+        if(archivoE.exists()) {
+            bw = new BufferedWriter(new FileWriter(archivoE));
+            bw.write("El archivo ya habia sido creado.");
+        } else {
+            bw = new BufferedWriter(new FileWriter(archivoE));
+            bw.write("Se creo el archivo exitosamente.");
+        }
+        bw.close();
+        
+        Lector l = new Lector(archivoE);
+        l.leerLinea();
+       
+        String linea;
+
+		while((linea=l.leerLinea())!=null){
+			linea.split(",");
+		}
+	}
+	
 }
