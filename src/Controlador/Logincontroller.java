@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import Modelo.Authenticator;
+import Modelo.Registros;
 import Modelo.User;
 
 @WebServlet("/Logincontroller")
@@ -26,7 +26,7 @@ public class Logincontroller extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		RequestDispatcher rd = null;
-		Authenticator authenticator = new Authenticator();
+		Registros authenticator = new Registros();
 		String result = authenticator.authenticate(username, password);
 		if (result.equals("success")) {
 			rd = request.getRequestDispatcher("/success.jsp");
