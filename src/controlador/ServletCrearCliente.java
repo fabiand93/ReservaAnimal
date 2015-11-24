@@ -43,7 +43,7 @@ public class ServletCrearCliente extends HttpServlet {
         int edad = new Integer(request.getParameter("edad")).intValue();
         HttpSession sesion = request.getSession();
         Cliente nuevoCliente = new Cliente(nombre,apellido,identificacion,usuario,contrasena,edad);
-        sesion.setAttribute(usuario, nuevoCliente);
+        sesion.setAttribute("usuario", nuevoCliente);
 		response.setContentType("text/html");
 		PrintWriter pw = response.getWriter();
 		String docType =
