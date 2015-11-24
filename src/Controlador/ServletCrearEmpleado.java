@@ -48,8 +48,6 @@ public class ServletCrearEmpleado extends HttpServlet {
         System.out.println(nombre+" "+apellido+" "+identificacion+" "+usuario+" "+contrasena+" "+cargo);
         
         
-        
-        
         sesion.setAttribute(usuario, nuevoEmpleado);
         
 		response.setContentType("text/html");
