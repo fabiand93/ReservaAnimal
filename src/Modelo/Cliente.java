@@ -27,7 +27,6 @@ public class Cliente extends Persona{
 		return this.getNombre()+","+this.getApellido()+","+this.getIdentificacion()+","+this.getUsuario()+","+this.getEdad();
 	}
 	
-	@Override
 	public String toStringArchivos(){
 		return "Nombre: "+this.getNombre()+","+"Apellido: "+this.getApellido()+","
 	+"Identificacion: "+this.getIdentificacion()+","+"Nombre de usuario: "+this.getUsuario()+","+
