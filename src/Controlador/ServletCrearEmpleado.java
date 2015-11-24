@@ -1,4 +1,4 @@
-package controlador;
+package Controlador;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,6 +12,7 @@ import javax.servlet.http.HttpSession;
 
 import Modelo.Cliente;
 import Modelo.Empleado;
+import Modelo.Registros;
 
 /**
  * Servlet implementation class ServletCrearEmpleado
@@ -48,6 +49,7 @@ public class ServletCrearEmpleado extends HttpServlet {
 		String docType =
 				"<!DOCTYPE html>\n";
 		pw.println(docType+"<HTML><HEAD><TITLE>Creacion de empleados</TITLE></HEAD>"+"<Body>"+"</P><BR>"+"</BODY></HTML>");
+		Registros.crearEmpleado(nombre, apellido, identificacion, usuario, contrasena, cargo);
 	}
 
 	/**

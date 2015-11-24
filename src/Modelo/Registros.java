@@ -10,8 +10,8 @@ public class Registros {
 	private ArrayList<Empleado> empleados;
 
 	public Registros() {
-		clientes = new ArrayList();
-		empleados = new ArrayList();
+		clientes = new ArrayList<Cliente>();
+		empleados = new ArrayList<Empleado>();
 	}
 
 	public Cliente crearCliente(String nombre, String apellido,
@@ -21,7 +21,7 @@ public class Registros {
 				contrasena, edad);
 	}
 
-	public Empleado crearEmpleado(String nombre, String apellido,
+	public static Empleado crearEmpleado(String nombre, String apellido,
 			String identificacion, String usuario, String contrasena,
 			 String cargo) {
 
@@ -113,10 +113,8 @@ public class Registros {
         BufferedWriter bw;
         if(archivoC.exists()) {
             bw = new BufferedWriter(new FileWriter(archivoC));
-            bw.write("El archivo ya habia sido creado.");
         } else {
             bw = new BufferedWriter(new FileWriter(archivoC));
-            bw.write("Se creo el archivo exitosamente.");
         }
         bw.close();
         
@@ -136,10 +134,8 @@ public class Registros {
         BufferedWriter bw;
         if(archivoE.exists()) {
             bw = new BufferedWriter(new FileWriter(archivoE));
-            bw.write("El archivo ya habia sido creado.");
         } else {
             bw = new BufferedWriter(new FileWriter(archivoE));
-            bw.write("Se creo el archivo exitosamente.");
         }
         bw.close();
         
