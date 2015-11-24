@@ -23,6 +23,6 @@ public class Boleta {
 	}
 	@Override
 	public String toString(){
-		return this.getNumero()+","+this.getPrecio();
+		return this.getNumero()+","+this.getPrecio()+"\n";
 	}
 }

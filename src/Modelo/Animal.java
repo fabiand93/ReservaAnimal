@@ -58,6 +58,6 @@ public class Animal {
 	
 	@Override
 	public String toString(){
-		return this.getNombre()+","+this.getId()+","+this.getTipoDeAlimento()+","+this.getDescripcion()+","+this.getEdad();
+		return this.getNombre()+","+this.getId()+","+this.getTipoDeAlimento()+","+this.getDescripcion()+","+this.getEdad()+"\n";
 	}
 }

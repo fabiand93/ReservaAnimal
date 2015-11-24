@@ -22,7 +22,7 @@ public class Donacion {
 	
 	@Override
 	public String toString(){
-		return this.getMonto()+","+this.getDonador();
+		return this.getMonto()+","+this.getDonador()+"\n";
 	}
 
 }

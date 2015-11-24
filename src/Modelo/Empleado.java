@@ -21,7 +21,7 @@ public class Empleado  extends Persona{
 	@Override
 	public String toString(){
 		return this.getNombre()+","+this.getApellido()+","+this.getIdentificacion()+","+this.getUsuario()
-		+","+this.getContrasena()+","+this.getCargo();
+		+","+this.getContrasena()+","+this.getCargo()+"\n";
 	}
 
 }

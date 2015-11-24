@@ -24,7 +24,7 @@ public class Cliente extends Persona{
 	
 
 	public String toStringArchivo(){
-		return this.getNombre()+","+this.getApellido()+","+this.getIdentificacion()+","+this.getUsuario()+","+this.getEdad();
+		return this.getNombre()+","+this.getApellido()+","+this.getIdentificacion()+","+this.getUsuario()+","+this.getEdad()+"\n";
 	}
 	
 
