@@ -34,7 +34,7 @@ public class ServletCrearAnimal extends HttpServlet {
 	        String identificacion = request.getParameter("id");
 	        String descripcion = request.getParameter("des");
 	        String alimento = request.getParameter("alimento");
-	        new Animal(nombre,identificacion,alimento,descripcion,edad);
+	        Animal a = new Animal(nombre,identificacion,alimento,descripcion,edad);
 	        
 			response.setContentType("text/html");
 			PrintWriter pw = response.getWriter();
