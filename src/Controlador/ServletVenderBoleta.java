@@ -28,7 +28,9 @@ public class ServletVenderBoleta extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
+		Registros reg = new Registros()
 		String id = request.getParameter("identificacion");
+	
 	}
 
 	/**
