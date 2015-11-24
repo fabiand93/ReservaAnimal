@@ -43,17 +43,17 @@
 </h1>
 
 <hr>
-    <form name="CrearAnimal" method="get" action="ServletCrearAnimal"> 
+    <form name="ServletCrearAnimal" method="get"> 
     
-      <label  for="nombre">Ingresa el nombre porfavor:</label> <input  id="nombre"  placeholder="Escribe aqui su nombre"  type="text"> 
+      <label  for="nombre">Ingresa el nombre porfavor:</label> <input  id="nombre" name="nombre" placeholder="Escribe aqui su nombre"  type="text"> 
       <br>
-      <label  for="id">Ingresa su identificacion porfavor: <input  id="id"  placeholder="Escribe aqui su identificacion" type="text"> </label>
+      <label  for="id">Ingresa su identificacion porfavor: <input  id="id"  name="id" placeholder="Escribe aqui su identificacion" type="text"> </label>
        <br>
-       <label  for="alimento">Ingresa el tipo de alimento al que esta acostumbrado: <input  id="alimento"  placeholder="tipo de alimento" type="text"></label> 
+       <label  for="alimento">Ingresa el tipo de alimento al que esta acostumbrado: <input  id="alimento"  name="alimento" placeholder="tipo de alimento" type="text"></label> 
        <br>
-       <label  for="des">Ingresa una breve descripcion del animal: <input  id="des"  placeholder="descripcion" type="text"> </label>
+       <label  for="des">Ingresa una breve descripcion del animal: <input  id="des" name="des" placeholder="descripcion" type="text"> </label>
        <br>
-       <label  for="edad">Ingresa la edad del animal: <input  id="edad"  placeholder="ingresa su edad" type="text"> </label>
+       <label  for="edad">Ingresa la edad del animal: <input  id="edad" name="edad" placeholder="ingresa su edad" type="text"> </label>
        <br>
       <br/>
       <input type="submit" value="Crear">    

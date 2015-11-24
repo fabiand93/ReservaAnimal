@@ -22,7 +22,6 @@ public class ServletCrearAnimal extends HttpServlet {
      * @see HttpServlet#HttpServlet()
      */
     public ServletCrearAnimal() {
-        super();
         // TODO Auto-generated constructor stub
     }
 
@@ -36,7 +35,7 @@ public class ServletCrearAnimal extends HttpServlet {
 	        String identificacion = request.getParameter("id");
 	        String descripcion = request.getParameter("des");
 	        String alimento = request.getParameter("alimento");
-	        Animal a = new Animal(nombre,identificacion,alimento,descripcion,edad);
+	        new Animal(nombre,identificacion,alimento,descripcion,edad);
 	        
 			response.setContentType("text/html");
 			PrintWriter pw = response.getWriter();
@@ -44,7 +43,7 @@ public class ServletCrearAnimal extends HttpServlet {
 					"<!DOCTYPE html>\n";
 			pw.println(docType+"<HTML><HEAD><TITLE>Creacion de animales</TITLE></HEAD>"+"<BODY BGCOLOR=\"#CCBBAA\">"
 			+"<H2>Leyendo parametros desde un formulario html</H2><P>"+"<UL>\n"+"Verificacion de datos:"+
-			"El nombre del animal es: " +nombre  + "<BR>"+"La edad es: " + edad + "<BR>"+"Identificacion: " + identificacion + "<BR>"
+			"El nombre del animal es: "+nombre  + "<BR>"+"La edad es: " + edad + "<BR>"+"Identificacion: " + identificacion + "<BR>"
 			+"El tipo de alimento que consume es: " +descripcion  + "<BR>"+"Descripcion del animal: " +alimento  + "</P><BR>"+"</BODY></HTML>");
 	
 	}
