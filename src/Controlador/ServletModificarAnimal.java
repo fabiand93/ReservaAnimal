@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import Modelo.Reserva;
 
 /**
  * Servlet implementation class ServletModificarAnimal
@@ -26,7 +27,7 @@ public class ServletModificarAnimal extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		Reserva reserva = Reserva();
+		Reserva reserva = new Reserva();
 		String identificacion= request.getParameter("identificacion");
 	}
 

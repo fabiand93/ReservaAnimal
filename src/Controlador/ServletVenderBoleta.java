@@ -1,4 +1,4 @@
-package controlador;
+package Controlador;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -54,7 +54,7 @@ public class ServletVenderBoleta extends HttpServlet {
 			;
 			Taquilla taq = new Taquilla((Empleado) sesion.getAttribute("empleado"));
 			//cargar Datos
-			Boleta  b = taq.venderTiquete(cliente);
+			Boleta  b = taq.venderTiquete(cliente); //que hace?
 			response.setContentType("text/html");
 			PrintWriter pw = response.getWriter();
 			String docType =
