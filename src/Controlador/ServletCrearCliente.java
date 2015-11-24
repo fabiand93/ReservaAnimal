@@ -12,6 +12,7 @@ import javax.servlet.http.HttpSession;
 
 import Modelo.Animal;
 import Modelo.Cliente;
+import Modelo.Registros;
 
 /**
  * Servlet implementation class ServletCrearCliente
@@ -33,8 +34,16 @@ public class ServletCrearCliente extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
-		
+		String docType =
+				"<!DOCTYPE html>\n";
+		Registros reg = new Registros();
+		try {
+			reg.cargarDatosCliente();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			
+			
+		}
 		String nombre = request.getParameter("nombre");
         String apellido = request.getParameter("apellido");
         String identificacion = request.getParameter("id");
@@ -46,8 +55,7 @@ public class ServletCrearCliente extends HttpServlet {
         sesion.setAttribute("usuario", nuevoCliente);
 		response.setContentType("text/html");
 		PrintWriter pw = response.getWriter();
-		String docType =
-				"<!DOCTYPE html>\n";
+		
 		pw.println(docType+"<HTML><HEAD><TITLE>Creacion de Clientes</TITLE></HEAD>"+"<Body>"+"</P><BR>"+"</BODY></HTML>");
 	}
 

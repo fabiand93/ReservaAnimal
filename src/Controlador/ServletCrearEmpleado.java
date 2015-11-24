@@ -32,21 +32,22 @@ public class ServletCrearEmpleado extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		
+		Registros reg = new Registros();
 		String nombre = request.getParameter("nombre");
         String apellido = request.getParameter("apellido");
         String identificacion = request.getParameter("id");
         String usuario = request.getParameter("usuario");
         String contrasena = request.getParameter("contrasena");
         String cargo = request.getParameter("cargo");
-        
+        HttpSession sesion = request.getSession();
         Empleado nuevoEmpleado = new Empleado(nombre,apellido,identificacion,usuario,contrasena,cargo);
         
-        Registros.crearEmpleado(nombre, apellido, identificacion, usuario, contrasena, cargo);
+        reg.agregarEmpleado(nuevoEmpleado);
+        sesion.setAttribute("registro", reg);
         
         System.out.println(nombre+" "+apellido+" "+identificacion+" "+usuario+" "+contrasena+" "+cargo);
         
-        HttpSession sesion = request.getSession();
+        
         
         
         sesion.setAttribute(usuario, nuevoEmpleado);
