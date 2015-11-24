@@ -1,4 +1,4 @@
-package Login;
+package controlador;
 
 import java.io.IOException;
 
@@ -12,11 +12,11 @@ import javax.servlet.http.HttpServletResponse;
 import Modelo.Authenticator;
 import Modelo.User;
 
-@WebServlet("/LoginController")
-public class LoginController extends HttpServlet {
+@WebServlet("/Logincontroller")
+public class Logincontroller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	public LoginController() {
+	public Logincontroller() {
 		super();
 	}
 
