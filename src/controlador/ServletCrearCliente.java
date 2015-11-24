@@ -8,8 +8,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import Modelo.Animal;
+import Modelo.Cliente;
 
 /**
  * Servlet implementation class ServletCrearCliente
@@ -31,14 +33,16 @@ public class ServletCrearCliente extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		HttpSession sesion = request.getSession();
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		String nombre = request.getParameter("nombre");
         String apellido = request.getParameter("apellido");
         String identificacion = request.getParameter("id");
-        String descripcion = request.getParameter("des");
-        String alimento = request.getParameter("alimento");
-        new Animal(nombre,identificacion,alimento,descripcion,edad);
-        
+        String usuario = request.getParameter("usuario");
+        String contraseña = request.getParameter("contraseña");
+        int edad = new Integer(request.getParameter("edad")).intValue();
+        Cliente nuevoCLiente = new Cliente(nombre,apellido,identificacion,usuario,contraseña,edad);
+       
 		response.setContentType("text/html");
 		PrintWriter pw = response.getWriter();
 	}
