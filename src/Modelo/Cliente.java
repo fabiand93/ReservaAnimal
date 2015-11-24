@@ -23,9 +23,7 @@ public class Cliente extends Persona{
 	}
 	
 	public String toString(){
-		return "Nombre: "+this.getNombre()+","+"Apellido: "+this.getApellido()+","
-	+"Identificacion: "+this.getIdentificacion()+","+"Nombre de usuario: "+this.getUsuario()+","+
-				"Edad: "+this.getEdad();
+		return this.getNombre()+","+this.getApellido()+","+this.getIdentificacion()+","+this.getUsuario()+","+this.getEdad();
 	}
 
 }
