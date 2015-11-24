@@ -24,7 +24,7 @@ public class Registros {
 	public static Empleado crearEmpleado(String nombre, String apellido,
 			String identificacion, String usuario, String contrasena,
 			 String cargo) {
-
+		System.out.println(nombre+" "+apellido+" "+identificacion+" "+usuario+" "+contrasena+" "+cargo);
 		return new Empleado(nombre, apellido, identificacion, usuario,
 				contrasena,  cargo);
 	}

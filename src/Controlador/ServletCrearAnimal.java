@@ -29,7 +29,7 @@ public class ServletCrearAnimal extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-	     String nombre = request.getParameter("nombre");
+	     	String nombre = request.getParameter("nombre");
 	        String edad = request.getParameter("edad");
 	        String identificacion = request.getParameter("id");
 	        String descripcion = request.getParameter("des");
