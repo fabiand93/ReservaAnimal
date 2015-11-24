@@ -1,4 +1,4 @@
-package Login;
+package Modelo;
 
 public class Authenticator {
 	public String authenticate(String username, String password) {
