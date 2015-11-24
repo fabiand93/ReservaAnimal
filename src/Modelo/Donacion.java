@@ -21,7 +21,7 @@ public class Donacion {
 	}
 	
 	public String toString(){
-		return "Monto: "+this.getMonto()+","+"Donador: "+this.getDonador();
+		return this.getMonto()+","+this.getDonador();
 	}
 
 }
