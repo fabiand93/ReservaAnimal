@@ -4,7 +4,7 @@
 <html>
 
 <head>
-	<title>Proyecto Info 3 - Iniciar Sesion</title>
+	<title>Proyecto Info 3 - Comprar Entradas</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -46,7 +46,7 @@
 							 -->
 						</ul>
 					</li>
-					<li><a href="comprar-entradas.html">Comprar Entradas</a></li>
+					<li><a href="ComprarEntradas.jsp">Comprar Entradas</a></li>
 					<li><a href="donaciones.html">Donaciones</a></li>
 					<li><a href="login.jsp">Login</a>
 				</ul>
@@ -59,7 +59,7 @@
 			<div class="container">
 				<article id="main" class="special">
 					<header>
-						<h2><a href="#">Iniciar Sesion</a></h2>
+						<h2><a href="#">Comprar Entradas</a></h2>
 					</header>
 
 					<!-- login form -->
